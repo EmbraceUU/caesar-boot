@@ -1,7 +1,6 @@
 package com.demo.commonserver.service;
 
 import org.apache.commons.lang.StringUtils;
-import org.apache.log4j.Logger;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -10,7 +9,6 @@ import java.util.List;
 import java.util.Map;
 
 public class SymbolService {
-	protected static Logger log = Logger.getLogger(SymbolService.class);
 	public static final String OKEXFU = "OKEXFU";
 	public static final String BITMEX = "BITMEX";
 

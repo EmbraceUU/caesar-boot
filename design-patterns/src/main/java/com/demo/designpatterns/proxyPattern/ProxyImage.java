@@ -12,7 +12,7 @@ public class ProxyImage implements Image {
 	
 	public ProxyImage(Image realImage) { 
 		// 确定代理的委托类
-		if(realImage.getClass() == RealImage.Class){
+		if(realImage.getClass() == RealImage.class){
 			this.realImage = (RealImage) realImage;
 		}	
 	}

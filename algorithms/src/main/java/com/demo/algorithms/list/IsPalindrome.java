@@ -1,9 +1,5 @@
 package com.demo.algorithms.list;
 
-import com.demo.algorithm.list.ListNode;
-
-import static com.demo.algorithm.list.ReverseList.reverseList;
-
 /**
  * Judge palindromic linked lists
  */
@@ -29,11 +25,11 @@ public class IsPalindrome {
         // 使用反转链表，时间复杂度为O(n)
         if (fast != null) {
             // 链表元素奇数个
-            slow.next = reverseList(slow.next);
+            slow.next = ReverseList.reverseList(slow.next);
             slow = slow.next;
         } else {
             // 链表元素偶数个
-            slow = reverseList(slow);
+            slow = ReverseList.reverseList(slow);
         }
         while (slow != null) {
             if (head.val != slow.val) {

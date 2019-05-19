@@ -9,7 +9,7 @@ public class CancelOrderOkex extends CurlOkex {
         String reqeustPath = String.format(PATH_CANCELORDER_SPOT,"");
         url = HOST + reqeustPath;
         body = assembleBody();
-        sign = sign(timestamp, method, reqeustPath, body, secreatKey);
+        sign = sign(timestamp, method, reqeustPath, body, secretKey);
     }
 
     public String assembleBody() {

@@ -3,8 +3,6 @@ package com.demo.designpatterns.dynamicProxy.test_three;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 
-import Util.MonitorUtil;
-
 /**
  * 	实现了InvocationHandler接口
  * 	这个类不是生成的动态代理类本身&&没有和实体类有共同接口
@@ -19,7 +17,7 @@ public class StuInvocationHandler<T> implements InvocationHandler {
 	// Invocationhandler 持有的被代理对象
 	T target;
 
-	public StuInvocationHandler(T target) {
+	StuInvocationHandler(T target) {
 		this.target = target;
 	}
 
@@ -33,11 +31,8 @@ public class StuInvocationHandler<T> implements InvocationHandler {
 
 		System.out.println("代理执行" + method.getName() + "方法");
 		// 在invoke中可以加入预处理和后处理
-		MonitorUtil.start(); 
 		// invoke的参数是被代理对象
-		Object result = method.invoke(target, arg); 
-		MonitorUtil.finish(method.getName());
-		return result;
+		return method.invoke(target, arg);
 	}
 
 }

@@ -3,8 +3,8 @@ package com.demo.commonserver.service.impl;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
-import com.mini.entity.BitmexSymbol;
-import com.mini.service.SymbolService;
+import com.demo.commonserver.entity.BitmexSymbol;
+import com.demo.commonserver.service.SymbolService;
 
 import java.io.FileWriter;
 import java.io.PrintWriter;
