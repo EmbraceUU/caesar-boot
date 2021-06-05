@@ -1,5 +1,6 @@
-package com.demo.graphql;
+package com.demo.graphql.helloworld;
 
+import com.demo.graphql.helloworld.GraphQLDataFetchers;
 import com.google.common.base.Charsets;
 import com.google.common.io.Resources;
 import graphql.GraphQL;

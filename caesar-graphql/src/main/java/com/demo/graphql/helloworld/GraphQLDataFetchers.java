@@ -1,4 +1,4 @@
-package com.demo.graphql;
+package com.demo.graphql.helloworld;
 
 import com.google.common.collect.ImmutableMap;
 import graphql.schema.DataFetcher;
