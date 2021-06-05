@@ -1,0 +1,12 @@
+spring:
+  redis:
+    timeout: 15s
+    database: 10
+    host: localhost
+    port: 6379
+    password: ""
+
+  cache:
+    cache-names: "book1,book2"
+    redis:
+      time-to-live: "10m"

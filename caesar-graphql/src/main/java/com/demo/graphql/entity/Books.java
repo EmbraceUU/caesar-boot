@@ -2,8 +2,10 @@ package com.demo.graphql.entity;
 
 import lombok.Data;
 
+import java.io.Serializable;
+
 @Data
-public class Books {
+public class Books implements Serializable {
 
     private String isbn;
     private String title;
