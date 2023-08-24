@@ -1,7 +1,5 @@
 package com.demo.commonserver.utils;
 
-import java.util.ArrayList;
-
 public class Genericity<K, V> {
 
     private K key;

@@ -1,5 +1,7 @@
 package com.demo.algorithms.search;
 
+import java.util.PriorityQueue;
+
 /**
  * 二分查找
  * O(logn)
