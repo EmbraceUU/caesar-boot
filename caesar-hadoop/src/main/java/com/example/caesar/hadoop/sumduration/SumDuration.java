@@ -54,7 +54,7 @@ public class SumDuration {
         job.setOutputValueClass(Text.class);
 
         FileSystem.get(configuration).delete(new Path("/Users/denial/IdeaProjects/caesar-boot/caesar-hadoop/src/main/java/com/example/caesar/hadoop/sumduration/out"),true);
-        FileInputFormat.setInputPaths(job,new Path("/Users/denial/IdeaProjects/caesar-boot/caesar-hadoop/src/main/resources/call.log"));
+        FileInputFormat.setInputPaths(job,new Path("/Users/denial/IdeaProjects/caesar-boot/caesar-hadoop/src/main/resources/data.log"));
         FileOutputFormat.setOutputPath(job, new Path("/Users/denial/IdeaProjects/caesar-boot/caesar-hadoop/src/main/java/com/example/caesar/hadoop/sumduration/out"));
 
         final boolean flag = job.waitForCompletion(true);

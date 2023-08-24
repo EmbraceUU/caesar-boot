@@ -55,7 +55,7 @@ public class SumCount {
         job.setOutputValueClass(IntWritable.class);
 
         FileSystem.get(conf).delete(new Path("/Users/denial/IdeaProjects/caesar-boot/caesar-hadoop/src/main/java/com/example/caesar/hadoop/sumcount/out"),true);
-        FileInputFormat.setInputPaths(job,new Path("/Users/denial/IdeaProjects/caesar-boot/caesar-hadoop/src/main/resources/call.log"));
+        FileInputFormat.setInputPaths(job,new Path("/Users/denial/IdeaProjects/caesar-boot/caesar-hadoop/src/main/resources/data.log"));
         FileOutputFormat.setOutputPath(job, new Path("/Users/denial/IdeaProjects/caesar-boot/caesar-hadoop/src/main/java/com/example/caesar/hadoop/sumcount/out"));
 
         final boolean flag = job.waitForCompletion(true);

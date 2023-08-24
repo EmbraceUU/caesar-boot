@@ -154,7 +154,7 @@ public class TopNDuration {
         job.setOutputValueClass(Text.class);
 
         FileSystem.get(conf).delete(new Path("/Users/denial/IdeaProjects/caesar-boot/caesar-hadoop/src/main/java/com/example/caesar/hadoop/topnduration/out"),true);
-        FileInputFormat.setInputPaths(job,new Path("/Users/denial/IdeaProjects/caesar-boot/caesar-hadoop/src/main/resources/call.log"));
+        FileInputFormat.setInputPaths(job,new Path("/Users/denial/IdeaProjects/caesar-boot/caesar-hadoop/src/main/resources/data.log"));
         FileOutputFormat.setOutputPath(job, new Path("/Users/denial/IdeaProjects/caesar-boot/caesar-hadoop/src/main/java/com/example/caesar/hadoop/topnduration/out"));
 
         System.exit(job.waitForCompletion(true) ? 0 : 1);
