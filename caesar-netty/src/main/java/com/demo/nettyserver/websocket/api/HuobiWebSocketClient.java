@@ -3,12 +3,12 @@ package com.demo.nettyserver.websocket.api;
 import com.demo.nettyserver.util.JsonUtil;
 import com.demo.nettyserver.websocket.WebSocketClient;
 import com.demo.nettyserver.websocket.WebSocketService;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import io.netty.handler.codec.http.websocketx.TextWebSocketFrame;
+import org.apache.log4j.Logger;
 
 public class HuobiWebSocketClient extends WebSocketClient {
 
-    private Logger log = LoggerFactory.getLogger(HuobiWebSocketClient.class);
+    private Logger log = Logger.getLogger(HuobiWebSocketClient.class);
     private static String WSURL = "wss://api.huobi.pro/ws";
 
     public HuobiWebSocketClient() {

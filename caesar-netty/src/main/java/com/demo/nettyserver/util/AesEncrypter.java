@@ -15,8 +15,7 @@ import java.security.GeneralSecurityException;
 import java.security.Key;
 
 public class AesEncrypter {
-
-	private final static Logger log = Logger.getLogger(AesEncrypter.class);
+	private Logger log = Logger.getLogger(AesEncrypter.class);
 
 	private final static int CRYPTO_KEYLEN = 128;
 
